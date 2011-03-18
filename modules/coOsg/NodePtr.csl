@@ -1,0 +1,7 @@
+/*
+	Wraps an osg::Node ref pointer from OSG Library.
+*/
+native class NodePtr( <osg/Node> osg::ref_ptr<osg::Node> )
+{
+	readonly attribute int32 dummy;
+};

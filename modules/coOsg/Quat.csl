@@ -1,0 +1,8 @@
+/*
+	Wraps a Quaternion.
+ */
+native class Quat ( <osg/Quat> osg::Quat )
+{
+	readonly attribute int32 dummy;
+};
+

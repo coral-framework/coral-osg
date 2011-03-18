@@ -1,0 +1,8 @@
+/*
+	Wraps a Vec3d.
+ */
+native class Vec3 ( <osg/Vec3d> osg::Vec3d )
+{
+	readonly attribute int32 dummy;
+};
+
