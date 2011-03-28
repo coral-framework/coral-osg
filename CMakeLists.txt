@@ -1,5 +1,5 @@
 ################################################################################
-# VL (Visualization Library) - Graphic Framework
+# OpenSceneGraph - Graphics Framework
 ################################################################################
 
 CMAKE_MINIMUM_REQUIRED( VERSION 2.6 )
@@ -32,5 +32,3 @@ SET( CORAL_PATH
 
 ADD_SUBDIRECTORY( src )
 
-ENABLE_TESTING()
-#ADD_SUBDIRECTORY( tests )
