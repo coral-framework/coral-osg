@@ -3,6 +3,6 @@
  */
 native class Vec3 ( <osg/Vec3d> osg::Vec3d )
 {
-	readonly attribute int32 dummy;
+	void set( in double x, in double y, in double z );
 };
 

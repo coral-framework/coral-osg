@@ -1,7 +1,7 @@
 /*
 	Wraps a Matrixd.
 */
-native class Mat4( <osg/Matrixd> osg::Matrixd )
+native class Matrix( <osg/Matrixd> osg::Matrixd )
 {
 	readonly attribute int32 dummy;
 };

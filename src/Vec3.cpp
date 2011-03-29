@@ -2,10 +2,9 @@
 
 namespace coOsg
 {
-	co::int32 Vec3_Adapter::getDummy( coOsg::Vec3& instance )
+	void Vec3_Adapter::set( coOsg::Vec3& instance, double x, double y, double z )
 	{
-		// dummy function, do nothing
-		return 0;
+		instance.set( x, y, z );
 	}
 }
 
