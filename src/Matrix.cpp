@@ -2,12 +2,6 @@
 
 namespace coOsg
 {
-	co::int32 Matrix_Adapter::getDummy( coOsg::Matrix& instance )
-	{
-		// dummy function, do nothing
-		return 0;
-	}
-	/*
 	void Matrix_Adapter::e( coOsg::Matrix& instance, co::int32 i, co::int32 j, double& element )
 	{
 		element = instance.ptr()[i*4 + j];
@@ -42,6 +36,6 @@ namespace coOsg
 	{
 		result = instance.preMult( v );
 	}
-	*/
-}
+
+} // namespace coOsg
 

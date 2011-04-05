@@ -3,10 +3,10 @@
  */
 native class Quat ( <osg/Quat> osg::Quat )
 {
-	attribute double x;
-	attribute double y;
-	attribute double z;
-	attribute double w;
+	double x;
+	double y;
+	double z;
+	double w;
 
 	bool zeroRotation();
 	void preMult( in Quat other );
@@ -17,4 +17,3 @@ native class Quat ( <osg/Quat> osg::Quat )
 	void getRotate( out double angle, out Vec3 axis );
 	void slerp( in double t, in Quat from, in Quat to );
 };
-

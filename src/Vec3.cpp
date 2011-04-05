@@ -76,5 +76,4 @@ namespace coOsg
 	{
 		instance -= other;
 	}
-}
-
+} // namespace coOsg

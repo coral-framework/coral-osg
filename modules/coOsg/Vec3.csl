@@ -3,9 +3,9 @@
  */
 native class Vec3 ( <osg/Vec3d> osg::Vec3d )
 {
-	attribute double x;
-	attribute double y;
-	attribute double z;
+	double x;
+	double y;
+	double z;
 
 	void length( out double length );
 	void normalize();
@@ -18,4 +18,3 @@ native class Vec3 ( <osg/Vec3d> osg::Vec3d )
 	void mulScalar( in double scalar );
 	void divScalar( in double scalar );
 };
-

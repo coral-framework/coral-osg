@@ -81,4 +81,4 @@ namespace coOsg
 	{
 		instance.zeroRotation();
 	}
-}
+} // namespace coOsg

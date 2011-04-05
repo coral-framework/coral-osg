@@ -27,6 +27,32 @@ SET( CORAL_PATH
 )
 
 ################################################################################
+# Installation
+################################################################################
+
+# enforce a safe default CMAKE_INSTALL_PREFIX
+IF( NOT CMAKE_INSTALL_PREFIX MATCHES "coral-osg" )
+	SET( CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}/coral-osg" )
+ENDIF()
+
+# install shared library
+INSTALL( DIRECTORY ${CMAKE_BINARY_DIR}/modules/coOsg DESTINATION modules )
+
+# install CSL files
+INSTALL( DIRECTORY ${CMAKE_SOURCE_DIR}/modules/ DESTINATION modules )
+
+################################################################################
+# Packaging
+################################################################################
+SET( CPACK_PACKAGE_NAME					"coral-osg" )
+SET( CPACK_PACKAGE_VERSION_MAJOR		"0" )
+SET( CPACK_PACKAGE_VERSION_MINOR		"1" )
+SET( CPACK_PACKAGE_VERSION_PATCH		"0" )
+SET( CPACK_PACKAGE_DESCRIPTION_SUMMARY	"A module for integrating [OpenSceneGraph](http://openscenegraph.org/) into Coral" )
+
+INCLUDE( CPack )
+
+################################################################################
 # Subdirectories
 ################################################################################
 

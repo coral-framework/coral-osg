@@ -3,6 +3,5 @@
  */
 native class Vec2 ( <osg/Vec2d> osg::Vec2d )
 {
-	readonly attribute int32 dummy;
+	readonly int32 dummy;
 };
-
