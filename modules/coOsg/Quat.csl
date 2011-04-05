@@ -3,6 +3,5 @@
  */
 native class Quat ( <osg/Quat> osg::Quat )
 {
-	readonly attribute int32 dummy;
+	readonly int32 dummy;
 };
-

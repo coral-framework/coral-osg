@@ -7,6 +7,4 @@ namespace coOsg
 		// dummy function, do nothing
 		return 0;
 	}
-}
-
-
+} // namespace coOsg

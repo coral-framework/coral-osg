@@ -5,4 +5,3 @@ native class Vec3 ( <osg/Vec3d> osg::Vec3d )
 {
 	void set( in double x, in double y, in double z );
 };
-

@@ -3,6 +3,5 @@
 */
 native class Matrix( <osg/Matrixd> osg::Matrixd )
 {
-	readonly attribute int32 dummy;
+	readonly int32 dummy;
 };
-

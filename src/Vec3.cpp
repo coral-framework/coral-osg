@@ -6,5 +6,4 @@ namespace coOsg
 	{
 		instance.set( x, y, z );
 	}
-}
-
+} // namespace coOsg

@@ -3,6 +3,5 @@
  */
 native class Vec4 ( <osg/Vec4d> osg::Vec4d )
 {
-	readonly attribute int32 dummy;
+	readonly int32 dummy;
 };
-

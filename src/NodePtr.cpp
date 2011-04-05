@@ -8,4 +8,3 @@ namespace coOsg
 		return 0;
 	}
 } // namespace coOsg
-
