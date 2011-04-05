@@ -3,6 +3,15 @@
 */
 native class Matrix( <osg/Matrixd> osg::Matrixd )
 {
-	readonly attribute int32 dummy;
+readonly attribute int32 dummy;
+/*
+	// gets an element
+	void e( in int32 i, in int32 j, out double element );
+	void makeIdentity(); 
+	void makeScale( in Vec3 scale );
+	void makeTranslate( in Vec3 translation );
+	void makeRotate( in double angle, in Vec3 axis );
+	void preMult( in Vec3 v, out Vec3 result );
+	void postMult( in Vec3 v, out Vec3 result );*/
 };
 
