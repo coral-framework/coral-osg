@@ -3,5 +3,5 @@
 */
 native class NodePtr( <osg/Node> osg::ref_ptr<osg::Node> )
 {
-	readonly int32 dummy;
+	// empty
 };

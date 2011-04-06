@@ -1,4 +1,3 @@
-
 #ignore thumbnails created by windows
 Thumbs.db
 #ignore cmake batch scripts
@@ -7,3 +6,4 @@ _GENERATE*.bat
 build*/
 #other ignored files
 log.txt
+
