@@ -8,7 +8,7 @@ native class Quat ( <osg/Quat> osg::Quat )
 	double z;
 	double w;
 
-	bool zeroRotation();
+	void zeroRotation();
 	void preMult( in Quat other );
 	void postMult( in Quat other );
 	void makeRotate( in double radians, in Vec3 axis );

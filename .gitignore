@@ -1,0 +1,9 @@
+
+#ignore thumbnails created by windows
+Thumbs.db
+#ignore cmake batch scripts
+_GENERATE*.bat
+#ignore out-of-the-source build directories
+build*/
+#other ignored files
+log.txt

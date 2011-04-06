@@ -19,17 +19,10 @@ function M.Mat4()
 	return co.new( "coOsg.Mat4" )
 end
 
-function M.Quat()
-	return co.new( "coOsg.Quat" )
-end
-
-function M.QuatFromCoordinates( x, y, z, w )
-	local q = co.new( "coOsg.Quat" )
-	q.x = x
-	q.y = y
-	q.z = z
-	q.w = w
-	return q
+function M.Quat( angle, x, y, z )
+	local v = co.new( "coOsg.Quat" )
+	v:makeRotate( angle, M.Vec3( x, y, z ) );
+	return v
 end
 
 -------------------------------------------------------------------------------

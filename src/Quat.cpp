@@ -1,4 +1,5 @@
 #include "Quat_Adapter.h"
+#include <cstdio>
 
 namespace coOsg
 {
@@ -77,7 +78,7 @@ namespace coOsg
 		instance.get( matrix );
 	}
 
-	bool Quat_Adapter::zeroRotation( coOsg::Quat& instance )
+	void Quat_Adapter::zeroRotation( coOsg::Quat& instance )
 	{
 		instance.zeroRotation();
 	}
