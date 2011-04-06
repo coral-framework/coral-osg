@@ -1,7 +1,7 @@
 /*
-	Wraps a Vec4d.
+	Wraps an osg::Vec4d.
  */
 native class Vec4 ( <osg/Vec4d> osg::Vec4d )
 {
-	readonly int32 dummy;
+	// empty
 };

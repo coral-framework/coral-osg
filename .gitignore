@@ -1,0 +1,16 @@
+################
+# Special Dirs #
+################
+/_*/
+/@*/
+/build/
+/build.debug/
+
+######################
+# OS generated files #
+######################
+.DS_Store?
+ehthumbs.db
+Icon?
+Thumbs.db
+

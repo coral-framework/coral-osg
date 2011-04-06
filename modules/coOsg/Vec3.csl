@@ -1,5 +1,5 @@
 /*
-	Wraps a Vec3d.
+	Wraps an osg::Vec3d.
  */
 native class Vec3 ( <osg/Vec3d> osg::Vec3d )
 {
