@@ -56,5 +56,8 @@ INCLUDE( CPack )
 # Subdirectories
 ################################################################################
 
+ENABLE_TESTING()
+
 ADD_SUBDIRECTORY( src )
+ADD_SUBDIRECTORY( tests )
 
