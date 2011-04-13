@@ -53,9 +53,14 @@ namespace coOsg
 		instance.getRotate( angle, axis );
 	}
 
-	void Quat_Adapter::makeRotate( coOsg::Quat& instance, double radians, const coOsg::Vec3& axis )
+	void Quat_Adapter::makeRotate( coOsg::Quat& instance, double radians, double x, double y, double z )
 	{
-		instance.makeRotate( radians, axis );
+		instance.makeRotate( radians, x, y, z );
+	}
+
+	void Quat_Adapter::makeRotateFromTo( coOsg::Quat& instance, double x0, double y0, double z0, double x1, double y1, double z1 )
+	{
+		instance.makeRotate( osg::Vec3d( x0, y0, z0 ), osg::Vec3d( x1, y1, z1 ) );
 	}
 
 	void Quat_Adapter::postMult( coOsg::Quat& instance, const coOsg::Quat& other )
