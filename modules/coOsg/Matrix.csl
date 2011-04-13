@@ -3,7 +3,7 @@
 */
 native class Matrix( <osg/Matrixd> osg::Matrixd )
 {
-	//! Gets an element
+	void setElement( in int32 i, in int32 j, in double element );
 	void getElement( in int32 i, in int32 j, out double element );
 	void makeIdentity();
 	void makeScale( in Vec3 scale );
