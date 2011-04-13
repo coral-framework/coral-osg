@@ -2,6 +2,11 @@
 
 namespace coOsg {
 
+void Matrix_Adapter::setElement( coOsg::Matrix& instance, co::int32 i, co::int32 j, double element )
+{
+	instance.ptr()[i * 4 + j] = element;
+}
+
 void Matrix_Adapter::getElement( coOsg::Matrix& instance, co::int32 i, co::int32 j, double& element )
 {
 	element = instance.ptr()[i*4 + j];
