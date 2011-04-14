@@ -22,36 +22,19 @@ end
 -------------------------------------------------------------------------------
 -- Quaternion and Matrix Constructors
 -------------------------------------------------------------------------------
-function M.Matrix()
-	return co.new( "coOsg.Matrix" )
-end
-
-function M.QuatCopy( other )
-	local v = co.new( "coOsg.Quat" )
-	v.x = other.x
-	v.y = other.y
-	v.z = other.z
-	v.w = other.w
-	return v
-end
-
-function M.Quat()
-	return co.new( "coOsg.Quat" )
-end
-
-function M.QuatFromRotation( angle, x, y, z )
-	local v = co.new( "coOsg.Quat" )
-	v:makeRotate( angle, M.Vec3( x, y, z ) );
-	return v
-end
-
-function M.QuatFromCoordinates( x, y, z, w )
+function M.Quat( x, y, z, w )
 	local q = co.new( "coOsg.Quat" )
 	q.x = x
 	q.y = y
 	q.z = z
 	q.w = w
 	return q
+end
+
+function M.QuatFromRotation( angle, x, y, z )
+	local v = co.new( "coOsg.Quat" )
+	v:makeRotate( angle, x, y, z );
+	return v
 end
 
 return M

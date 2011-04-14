@@ -63,14 +63,14 @@ namespace coOsg
 		instance.makeRotate( osg::Vec3d( x0, y0, z0 ), osg::Vec3d( x1, y1, z1 ) );
 	}
 
-	void Quat_Adapter::postMult( coOsg::Quat& instance, const coOsg::Quat& other )
+	void Quat_Adapter::postMult( coOsg::Quat& instance, const coOsg::Quat& other, coOsg::Quat& result )
 	{
-		instance = other * instance;
+		result = other * instance;
 	}
 
-	void Quat_Adapter::preMult( coOsg::Quat& instance, const coOsg::Quat& other )
+	void Quat_Adapter::preMult( coOsg::Quat& instance, const coOsg::Quat& other, coOsg::Quat& result )
 	{
-		instance *= other;
+		result = instance * other;
 	}
 
 	void Quat_Adapter::slerp( coOsg::Quat& instance, double t, const coOsg::Quat& from, const coOsg::Quat& to )

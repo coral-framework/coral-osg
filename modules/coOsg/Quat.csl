@@ -9,9 +9,10 @@ native class Quat ( <osg/Quat> osg::Quat )
 	double w;
 
 	void zeroRotation();
-	void preMult( in Quat other );
-	void postMult( in Quat other );
+	void preMult( in Quat other, out Quat result );
+	void postMult( in Quat other, out Quat result );
 	void makeRotate( in double radians, in double x, in double y, in double z );
+
 	// Rotates from (x0, y0, z0) to (x1, y1, z1)
 	void makeRotateFromTo( in double x0, in double y0, in double z0, in double x1, in double y1, in double z1 );
 	void fromMatrix( in Matrix matrix );

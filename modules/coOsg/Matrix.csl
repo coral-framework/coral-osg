@@ -9,6 +9,8 @@ native class Matrix( <osg/Matrixd> osg::Matrixd )
 	void makeScale( in Vec3 scale );
 	void makeTranslate( in Vec3 translation );
 	void makeRotate( in double angle, in Vec3 axis );
-	void preMult( in Vec3 v, out Vec3 result );
-	void postMult( in Vec3 v, out Vec3 result );
+	void preMultVec( in Vec3 v, out Vec3 result );
+	void postMultVec( in Vec3 v, out Vec3 result );
+	void preMult( in Matrix other );
+	void postMult( in Matrix other );
 };

@@ -32,14 +32,24 @@ void Matrix_Adapter::makeTranslate( coOsg::Matrix& instance, const coOsg::Vec3& 
 	instance.makeTranslate( translation );
 }
 
-void Matrix_Adapter::postMult( coOsg::Matrix& instance, const coOsg::Vec3& v, coOsg::Vec3& result )
+void Matrix_Adapter::postMultVec( coOsg::Matrix& instance, const coOsg::Vec3& v, coOsg::Vec3& result )
 {
 	result = instance.postMult( v );
 }
 
-void Matrix_Adapter::preMult( coOsg::Matrix& instance, const coOsg::Vec3& v, coOsg::Vec3& result )
+void Matrix_Adapter::preMultVec( coOsg::Matrix& instance, const coOsg::Vec3& v, coOsg::Vec3& result )
 {
 	result = instance.preMult( v );
+}
+
+void Matrix_Adapter::postMult( coOsg::Matrix& instance, const coOsg::Matrix& other )
+{
+	instance.postMult( other );
+}
+
+void Matrix_Adapter::preMult( coOsg::Matrix& instance, const coOsg::Matrix& other )
+{
+	instance.preMult( other );
 }
 
 } // namespace coOsg
