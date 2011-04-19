@@ -7,7 +7,7 @@ native class Quat ( <osg/Quat> osg::Quat )
 	double y;
 	double z;
 	double w;
-
+	
 	void zeroRotation();
 	void preMult( in Quat other, out Quat result );
 	void postMult( in Quat other, out Quat result );
@@ -19,4 +19,5 @@ native class Quat ( <osg/Quat> osg::Quat )
 	void toMatrix( out Matrix matrix );
 	void getRotate( out double angle, out Vec3 axis );
 	void slerp( in double t, in Quat from, in Quat to );
+	void conj( out Quat result );
 };

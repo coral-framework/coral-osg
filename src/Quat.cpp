@@ -87,4 +87,10 @@ namespace coOsg
 	{
 		instance.zeroRotation();
 	}
+
+	void Quat_Adapter::conj( coOsg::Quat& instance, coOsg::Quat& result )
+	{
+		result = instance.conj();
+	}
+
 } // namespace coOsg

@@ -3,6 +3,12 @@ M.PI = 3.1415926535
 M.PI_2 = 3.1415926535 * 0.5
 M.PI_4 = 3.1415926535 * 0.25
 
+-- transforms given coordinates to [-1,1] space within given half interval
+-- returns two values: normalized value of x and of y
+function M.normalizeCoordinates( x, y, halfXInterfal, halfXInterval )
+	return ( x / halfXInterfal ) - 1.0, ( y / halfXInterval  ) - 1.0
+end
+
 local M_PI2_DIV_360 = 2 * M.PI / 360
 -------------------------------------------------------------------------------
 -- Vectors Constructors
