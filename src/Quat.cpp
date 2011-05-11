@@ -43,7 +43,7 @@ namespace coOsg
 		instance.z() = value;
 	}
 
-	void Quat_Adapter::fromMatrix( coOsg::Quat& instance, const coOsg::Matrix& matrix )
+	void Quat_Adapter::makeFromMatrix( coOsg::Quat& instance, const coOsg::Matrix& matrix )
 	{
 		instance.set( matrix );
 	}
@@ -73,7 +73,7 @@ namespace coOsg
 		result = instance * other;
 	}
 
-	void Quat_Adapter::slerp( coOsg::Quat& instance, double t, const coOsg::Quat& from, const coOsg::Quat& to )
+	void Quat_Adapter::makeSlerp( coOsg::Quat& instance, double t, const coOsg::Quat& from, const coOsg::Quat& to )
 	{
 		instance.slerp( t, from, to );
 	}

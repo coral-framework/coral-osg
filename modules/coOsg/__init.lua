@@ -30,10 +30,10 @@ end
 -------------------------------------------------------------------------------
 function M.Quat( x, y, z, w )
 	local q = co.new( "coOsg.Quat" )
-	q.x = x
-	q.y = y
-	q.z = z
-	q.w = w
+	q.x = x or 0
+	q.y = y or 0
+	q.z = z or 0
+	q.w = w or 1
 	return q
 end
 
