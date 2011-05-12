@@ -5,6 +5,7 @@ native class Matrix( <osg/Matrixd> osg::Matrixd )
 {
 	void setElement( in int32 i, in int32 j, in double element );
 	void getElement( in int32 i, in int32 j, out double element );
+	void makeLookAt( in Vec3 eye, in Vec3 target, in Vec3 up );
 	void makeIdentity();
 	void makeScale( in Vec3 scale );
 	void makeTranslate( in Vec3 translation );

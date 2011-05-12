@@ -17,6 +17,10 @@ function M.deg2rad( degrees )
 	return M_PI2_DIV_360 * degrees
 end
 
+function M.Vec3Copy( v )
+	return M.Vec3( v.x, v.y, v.z )
+end
+
 function M.Vec3( x, y, z )
 	local v = co.new( "coOsg.Vec3" )
 	v.x = x
@@ -26,7 +30,7 @@ function M.Vec3( x, y, z )
 end
 
 -------------------------------------------------------------------------------
--- Quaternion and Matrix Constructors
+-- Quaternion Constructors
 -------------------------------------------------------------------------------
 function M.Quat( x, y, z, w )
 	local q = co.new( "coOsg.Quat" )
@@ -41,6 +45,14 @@ function M.QuatFromRotation( angle, x, y, z )
 	local v = co.new( "coOsg.Quat" )
 	v:makeRotate( angle, x, y, z );
 	return v
+end
+
+-------------------------------------------------------------------------------
+-- Matrix Constructors
+-------------------------------------------------------------------------------
+function M.Matrix()
+	local m = co.new( "coOsg.Matrix" )
+	return m
 end
 
 return M

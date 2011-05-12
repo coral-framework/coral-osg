@@ -12,6 +12,11 @@ void Matrix_Adapter::getElement( coOsg::Matrix& instance, co::int32 i, co::int32
 	element = instance.ptr()[i*4 + j];
 }
 
+void Matrix_Adapter::makeLookAt( coOsg::Matrix& instance, const coOsg::Vec3& eye, const coOsg::Vec3& target, const coOsg::Vec3& up )
+{
+	instance.makeLookAt( eye, target, up );
+}
+
 void Matrix_Adapter::makeIdentity( coOsg::Matrix& instance )
 {
 	instance.makeIdentity();
