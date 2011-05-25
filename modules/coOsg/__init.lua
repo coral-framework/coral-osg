@@ -23,9 +23,9 @@ end
 
 function M.Vec3( x, y, z )
 	local v = co.new( "coOsg.Vec3" )
-	v.x = x
-	v.y = y
-	v.z = z
+	v.x = x or 0
+	v.y = y or 0
+	v.z = z or 0
 	return v
 end
 
