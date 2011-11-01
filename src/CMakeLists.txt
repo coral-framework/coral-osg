@@ -18,7 +18,7 @@ FIND_PACKAGE( OpenGL REQUIRED )
 TARGET_LINK_LIBRARIES( coOsg ${CORAL_LIBRARIES} ${OPENSCENEGRAPH_LIBRARIES} ${OPENGL_gl_LIBRARY} ${OPENGL_glu_LIBRARY} )
 
 CORAL_TARGET( coOsg )
-CORAL_MODULE_TARGET( coOsg )
+CORAL_MODULE_TARGET( "coOsg" coOsg )
 
 ################################################################################
 # Source Groups
