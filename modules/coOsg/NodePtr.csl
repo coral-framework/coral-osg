@@ -1,7 +1,17 @@
 /*
 	Wraps an osg::Node ref pointer from OSG Library.
 */
-native class NodePtr( <osg/Node> osg::ref_ptr<osg::Node> )
+@co.Include( "osg/Node" )
+native class NodePtr
 {
-	// empty
+	<c++
+		// Forward Declarations:
+		namespace osg {
+			class Node;
+			template<class T> class ref_ptr;
+		} // namespace osg
+		namespace coOsg {
+			typedef osg::ref_ptr<osg::Node> NodePtr;
+		} // namespace coOsg
+	c++>
 };

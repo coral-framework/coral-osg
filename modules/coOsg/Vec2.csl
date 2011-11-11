@@ -1,7 +1,0 @@
-/*
-	Wraps an osg::Vec2d.
- */
-native class Vec2 ( <osg/Vec2d> osg::Vec2d )
-{
-	// empty
-};
