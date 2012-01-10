@@ -1,0 +1,19 @@
+/*
+	Wraps an osg::Node ref pointer from OSG Library.
+*/
+@co.Include( "osgViewer/Viewer" )
+native class ScenePtr
+{
+	<c++
+		// Forward Declarations:
+		namespace osg {
+			template<class T> class ref_ptr;
+		} // namespace osg
+		namespace osgViewer {
+			class Viewer;
+		} // namespace osgViewer
+		namespace coOsg {
+			typedef osg::ref_ptr<osgViewer::Viewer> ScenePtr;
+		} // namespace coOsg
+	c++>
+};
